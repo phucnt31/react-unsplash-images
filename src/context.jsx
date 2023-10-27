@@ -6,7 +6,9 @@ export const AppProvider = ({ children }) => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
 
   const toggleDarkTheme = () => {
-    setIsDarkTheme(!isDarkTheme);
+    const newDarkTheme = !isDarkTheme;
+    setIsDarkTheme(newDarkTheme);
+    document.body.classList.toggle("dark-theme", newDarkTheme);
   };
 
   return (
