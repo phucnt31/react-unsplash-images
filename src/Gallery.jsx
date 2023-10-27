@@ -45,7 +45,7 @@ const Gallery = () => {
           <img
             src={url}
             alt={item.alt_description}
-            key={url.id}
+            key={item.id}
             className="img"
           />
         );
